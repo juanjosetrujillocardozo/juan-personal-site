@@ -109,6 +109,29 @@ p.body strong { color: var(--text); font-weight: 600; }
 .project p { font-size: 0.85rem; color: var(--text-muted); flex-grow: 1; }
 .project .arrow { color: var(--accent); font-size: 0.85rem; margin-top: 12px; font-weight: 600; }
 
+.timeline { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.timeline li {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.timeline li:last-child { border-bottom: none; }
+.timeline-date {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  padding-top: 3px;
+}
+.timeline-role { display: block; font-size: 0.95rem; color: var(--text); line-height: 1.4; }
+.timeline-role strong { font-weight: 600; }
+.timeline-meta { display: block; font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; font-family: var(--mono); }
+@media (max-width: 600px) {
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+}
+
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
 .contact-link {
   background: var(--surface);
@@ -220,6 +243,57 @@ footer .meta { font-family: var(--mono); margin-top: 6px; font-size: 0.75rem; op
         <span class="arrow">trujovids.trujotechnologies.com →</span>
       </a>
     </div>
+  </section>
+
+  <section>
+    <p class="section-label">// Trayectoria</p>
+    <h2>Experiencia</h2>
+    <ul class="timeline">
+      <li>
+        <span class="timeline-date">2025 — Hoy</span>
+        <span class="timeline-role"><strong>Data Governance Analyst</strong> · Inetum (cliente BBVA Riesgos)</span>
+        <span class="timeline-meta">PySpark · AWS EMR · SageMaker · Cluster controlado BBVA</span>
+      </li>
+      <li>
+        <span class="timeline-date">2026 — Hoy</span>
+        <span class="timeline-role"><strong>Founder &amp; Engineer</strong> · TRUJO TECHNOLOGIES S.A.S.</span>
+        <span class="timeline-meta">NIT 902.025.831-4 · Constituida 16 ene 2026 · Producción en clientes reales</span>
+      </li>
+      <li>
+        <span class="timeline-date">2022 — 2023</span>
+        <span class="timeline-role"><strong>Cajero</strong> · Pizzería Hoyo 19</span>
+        <span class="timeline-meta">Atención al cliente · POS · Cierre de caja</span>
+      </li>
+      <li>
+        <span class="timeline-date">2019 — 2020</span>
+        <span class="timeline-role"><strong>Cajero</strong> · Ramona Pizza Artesanal</span>
+        <span class="timeline-meta">Atención al cliente · POS · Cierre de caja</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="section-label">// Formación</p>
+    <h2>Educación</h2>
+    <ul class="timeline">
+      <li>
+        <span class="timeline-date">2019 — 2024</span>
+        <span class="timeline-role"><strong>Ingeniería de Sistemas</strong> · Universidad Piloto de Colombia</span>
+      </li>
+      <li>
+        <span class="timeline-date">2016 — 2018</span>
+        <span class="timeline-role"><strong>Técnico en Sistemas</strong> · SENA</span>
+      </li>
+      <li>
+        <span class="timeline-date">Mar — Abr 2023</span>
+        <span class="timeline-role"><strong>Curso UI/UX · Adobe XD</strong> · EduGreen Training</span>
+      </li>
+      <li>
+        <span class="timeline-date">2024 — Hoy</span>
+        <span class="timeline-role"><strong>Cursos UNAD</strong> · Edición Musical (Finale, notación profesional)</span>
+      </li>
+    </ul>
+    <p class="body" style="margin-top:20px"><strong>Inglés</strong> · C2 certificado (EF SET 75+).</p>
   </section>
 
   <section>
